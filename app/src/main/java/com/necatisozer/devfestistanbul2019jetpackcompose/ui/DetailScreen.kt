@@ -42,9 +42,7 @@ private fun DetailsAppBar(
     changeTheme: () -> Unit
 ) {
     TopAppBar(
-        title = {
-            Text(title, style = TextStyle(+themeColor { onSecondary }))
-        },
+        title = { Text(title, style = TextStyle(+themeColor { onSecondary })) },
         actionData = listOf(R.drawable.ic_round_highlight_24),
         color = +themeColor { secondary },
         navigationIcon = {

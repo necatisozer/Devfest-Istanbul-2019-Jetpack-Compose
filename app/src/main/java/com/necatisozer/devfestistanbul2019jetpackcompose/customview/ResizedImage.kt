@@ -17,5 +17,4 @@ fun ResizedImage(
     Container(width = width, height = height) {
         DrawImage(image, tint)
     }
-
 }

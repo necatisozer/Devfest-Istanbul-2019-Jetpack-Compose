@@ -23,8 +23,6 @@ fun HomeScreen(
     openDetail: (Speaker) -> Unit,
     changeTheme: () -> Unit
 ) {
-
-
     FlexColumn {
         inflexible {
             HomeAppBar(changeTheme)
@@ -65,16 +63,9 @@ private fun HomeBody(
     changeSpeakerFavoriteStatus: (String) -> Unit,
     openDetail: (Speaker) -> Unit
 ) {
-    VerticalScrollingList(
-        speakers
-    ) { speaker ->
+    VerticalScrollingList(speakers) { speaker ->
         ListItem(
-            icon = {
-                CircularImage(
-                    speaker.image,
-                    48.dp
-                )
-            },
+            icon = { CircularImage(speaker.image, 48.dp) },
             text = { Text(speaker.name) },
             secondaryText = { Text(speaker.session) },
             trailing = {

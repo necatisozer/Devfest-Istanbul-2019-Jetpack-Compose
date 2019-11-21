@@ -15,11 +15,14 @@ fun PreviewTemplate(
     children: @Composable() () -> Unit
 ) {
     MaterialTheme(materialColors) {
-        Surface(color = +themeColor { background }, children = children)
+        Surface(
+            color = +themeColor { background },
+            children = children
+        )
     }
 }
 
 @Composable
 fun PreviewTemplateDark(children: @Composable() () -> Unit) {
-    PreviewTemplate(materialDarkColors, children = children)
+    PreviewTemplate(materialDarkColors, children)
 }

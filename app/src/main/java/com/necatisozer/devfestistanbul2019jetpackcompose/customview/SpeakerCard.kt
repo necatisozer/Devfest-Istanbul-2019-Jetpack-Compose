@@ -41,9 +41,7 @@ fun SpeakerCard(speaker: Speaker) {
                     }
                     Text(
                         text = speaker.session,
-                        style = (+themeTextStyle { body2 }).withOpacity(
-                            0.87f
-                        )
+                        style = (+themeTextStyle { body2 }).withOpacity(0.87f)
                     )
                 }
             }

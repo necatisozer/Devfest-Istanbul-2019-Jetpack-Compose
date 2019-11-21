@@ -13,12 +13,12 @@ import androidx.ui.res.imageResource
 import kotlin.math.min
 
 @Composable
-fun CircularImage(@DrawableRes id: Int, transformSize: Dp? = null) {
+fun CircularImage(@DrawableRes id: Int, size: Dp? = null) {
     val image = +imageResource(id)
     WithDensity {
-        val size = transformSize ?: min(image.width, image.height).toDp()
-        Container(width = size, height = size) {
-            Clip(shape = RoundedCornerShape(size / 2)) {
+        val newSize = size ?: min(image.width, image.height).toDp()
+        Container(width = newSize, height = newSize) {
+            Clip(shape = RoundedCornerShape(newSize / 2)) {
                 DrawImage(image)
             }
         }
