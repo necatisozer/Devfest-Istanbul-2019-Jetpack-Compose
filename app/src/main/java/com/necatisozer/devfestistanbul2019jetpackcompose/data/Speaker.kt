@@ -20,6 +20,6 @@ val speakerList = listOf(
     Speaker("5", R.drawable.necati_sozer,"Necati Sözer", "Declarative UI Paradigm feat. Jetpack Compose"),
     Speaker("6", R.drawable.nilay_yener,"Nilay Yener", "Flutter! Nedir, Nasil, Neden?"),
     Speaker("7", R.drawable.okan_aydin,"Okan Aydın", "Manage UI Navigation with Jetpack Navigation Component"),
-    Speaker("8", R.drawable.resul_caner_yildirim,"Result Caner Yıldırım", "Designing for Interactive Canvas on Google Assistant"),
+    Speaker("8", R.drawable.resul_caner_yildirim,"Resul Caner Yıldırım", "Designing for Interactive Canvas on Google Assistant"),
     Speaker("9", R.drawable.selin_alara_ornek,"Selin Alara Örnek", "Robotlarım ve Google")
 )
