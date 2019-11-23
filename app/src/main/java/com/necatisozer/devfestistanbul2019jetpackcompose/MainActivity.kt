@@ -2,11 +2,10 @@ package com.necatisozer.devfestistanbul2019jetpackcompose
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.ui.core.setContent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { }
+        setContentView(R.layout.main_activity)
     }
 }
